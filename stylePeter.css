@@ -1,0 +1,286 @@
+/* Main image on thingstodo Peter */
+.thingstodo-container-picture{
+    width: 100%;
+}
+
+/* Image container for 3/4 width image Peter */
+.thingstodo-container-threefourths{
+    width: 50%;
+    margin-left: 6%;
+}
+
+/* Text alongside 3/4 image Peter */
+.thingstodo-container-words{
+    float: right;
+    background-color: black;
+    display: flex;
+    margin-right: 6%;
+}
+
+/* Text alongside 3/4 image Peter */
+.thingstodo-container-words p{
+    font-size: 1.7vw;
+    line-height: 25px;
+    position: relative;
+    color: white;
+    float: right;
+    padding: 5%;
+ 
+}
+/* Peter */
+#content h1{
+    text-align: center;
+}
+
+/* Images side by side Peter */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.thingstodo-columnDuo1 {
+    float: left;
+    width: 50%;
+    padding: 80px;
+    padding-right: 0.5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+/* Images side by side Peter */
+.thingstodo-columnDuo2 {
+    float: left;
+    width: 50%;
+    padding: 80px;
+    padding-left: 0.5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+/* Clear floats after image containers Peter */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Text on top of images duobox1 */
+.thingstodo-top-left {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1vw;
+}
+
+/* Heading on top of images duobox1 */
+.thingstodo-top-left-heading{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1.8vw;
+}
+/* Text on top of images duobox2 */
+.thingstodo-top-left2 {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1vw;
+}
+
+/* Heading on top of images duobox2 */
+.thingstodo-top-left-heading2{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1.8vw;
+}
+
+/* triple images side by side Peter */
+.flex-row {
+    display: flex;
+}
+
+.flex-column1 {
+    flex: 33.33&;
+    padding-right: 1%;
+    padding-left: 6%;
+    position: relative;
+}
+/* Peter */
+.flex-column2 {
+    flex: 33.33&;
+    padding-left: 0%;
+    padding-right: 0%;
+    position: relative;
+}
+/* Peter */
+.flex-column3 {
+    flex: 33.33&;
+    padding-left: 1%;
+    padding-right: 6%;
+    position: relative;
+}
+
+/* Text centered for shopping page flex boxes */
+.flex-column1 p{
+    text-align: center;
+}
+
+.flex-column2 p{
+    text-align: center;
+}
+
+.flex-column3 p{
+    text-align: center;
+}
+/* Text on top of images flexcolumn1*/
+.flex-top-left {
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1vw;
+}
+
+/* Heading on top of images flexcolumn1 Peter */
+.flex-top-left-heading1 {
+    position: absolute;
+    top: 5%;
+    left: 23%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1.6vw;
+}
+
+/* Text on top of images flexcolumn2*/
+.flex-top-left2 {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1vw;
+}
+
+/* Heading on top of images flexcolumn2 Peter */
+.flex-top-left-heading2 {
+    position: absolute;
+    top: 5%;
+    left: 9.5%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1.6vw;
+}
+
+/* Text on top of images flexcolumn3*/
+.flex-top-left3 {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1vw;
+}
+
+/* Heading on top of images flexcolumn3 Peter */
+.flex-top-left-heading3 {
+    position: absolute;
+    top: 5%;
+    left: 9.5%;
+    color: white;
+    font-weight: 1000;
+    font-size: 1.6vw;
+}
+
+/* Footer for thingstodo Peter */
+.footer-thingstodo {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    line-height: 10px;
+    position: inherit;
+    border-top: 5px solid #3C6EB2;
+}
+/* Footer heading for thingstodo Peter */
+.heading2thingstodo {
+    font-family:"Trajan Pro" !important;
+    font-size: 25px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 200;
+    color: #3C6EB2;
+    line-height: 30px;
+    
+}
+
+/*shopping main image with text Peter */
+.shopping-columnDuo1 {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+/* Images side by side Peter */
+.shopping-columnDuo2 {
+    width: 50%;
+    float: right;
+    background-color: darkgoldenrod;
+    display: flex;
+}
+/*heading for shopping page */
+.shopping-columnDuo2 h1{
+    font-size: 2vw;
+    color: white;
+    position: absolute;
+    padding: 2%;
+    padding-left: 5%;
+    
+}
+.shopping-columnDuo2 p {
+    font-size: 1.5vw;
+    color: white;
+    position: absolute;
+    padding: 5%;
+    line-height: 25px;
+    float: right;
+}
+
+/* Clear floats after image containers Peter */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Footer for shopping Peter */
+.footer-shopping {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    line-height: 10px;
+    position: inherit;
+    border-top: 5px solid darkgoldenrod;
+    margin-top: 5%;
+}
+/* Footer heading for shopping Peter */
+.heading2shopping {
+    font-family:"Trajan Pro" !important;
+    font-size: 25px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 200;
+    color: darkgoldenrod;
+    line-height: 30px;
+    
+}
