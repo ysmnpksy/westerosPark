@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Group 8 Website</title>
+        <meta name="author" content="Group 8">
+        <meta name="description" content="Web Dev Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="styleSun.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+                <li class="left">
+                    <div id=header>
+                        <img src="logos/stark2.png">
+                    </div>
+                </li>
+                <li class="left"><div class="logohome"><div class="eventsColor">Westeros</div></div></li>
+                
+                <li class="rightNav"><div class="marginRight"><a href=accessibility.html>Accessibility</a></div></li>
+                
+                <li class="rightNav"><a href=shopping.html>Shopping</a></li>
+                
+                <li class="rightNav"><a href=thingstodo.html>Things to do</a></li>
+                
+                <li class="rightNav"><a class="activeevents" href=events.html>Events</a></li>
+                
+                <li class="rightNav"><a href=index.html>Home</a></li>
+            </ul>
+        </nav>
+        
+        <div id="smallNav">
+                <ul>
+                    <li class="left">
+                        <div id=header>
+                            <img src="logos/stark2.png">
+                        </div>
+                    </li>
+                    
+                    <li class="left">
+                        <div class="logohome">
+                            <div class="eventsColor">Westeros</div>
+                        </div>
+                    </li>
+                    
+                    <select class="select-css" onchange="location = this.value;">
+                        <option value="" selected="selected">Select</option>
+                        <option value="index.html">Home</option>
+                        <option value="events.html">Events</option>
+                        <option value="thingstodo.html">Things To Do</option>
+                        <option value="shopping.html">Shopping</option>
+                        <option value="accessibility.html">Accessibility</option>
+                    </select>
+                </ul>
+        </div>
+        
+        <!-event heading picture->
+        <img class='slideshow-container' src='eventsImages/headingEvent%20Cropped%20(1).jpg'>
+        
+        
+        <!- events heading (text) ->
+        <div id=content>
+            <div id="heading1Events">EVENTS</div>
+        </div>
+        
+        <!- event picture below the event heading ->
+        <div class="flex-row">
+            <div class="flex-column1">
+                <img src='eventsImages/event%201%20Cropped.jpg' alt="Can You Survive" style="width:100%">
+                <p>Join us for Running Around World™ featuring The North World with a 5K, 10K, and Kids’1K run in this world of ice and snow.</p>
+            </div>
+            
+            <div class="flex-column2">
+                <img src='eventsImages/event%202%20%20Cropped.jpg' alt="Make Your Way Through King 's Landing" style="width:100%">
+                <p>Immerse yourself in the adventures of Game of Thrones™ at The most cruel and dangerous World. </p>
+            </div>
+        
+            <div class="flex-column3">
+                <img src='eventsImages/event%203%20Cropped.jpg' alt="Game of thrones bar for quiet drinks and food" style="width:100%">
+                <p>If you dare, face heart-pounding special effects and unexpected twists at every turn as you fly over “the wall”in life-like horror. It will change you  forever! </p>
+            </div>
+        </div>
+        
+        <!- picture of Game of thrones->
+        <div id=content>
+            <div id="heading2Events"><div class="centeralign">#Game of Thrones</div></div>
+        </div>
+        
+        <div class="flex-row">
+            <div class="flex-column1">
+                <img src="eventsImages/winterfull.PNG" style="width:100%">
+            </div>
+            <div class="flex-column2">
+                <img src="eventsImages/Godswood.PNG" style="width:100%">
+            </div>
+            <div class="flex-column3">
+                <img src="eventsImages/qarth.PNG"  style="width:100%">
+            </div>
+        </div>
+        <br>
+        
+         <div class="footer-events">
+            <div id=pSmall style="width: 40%";>Whether you're starting for the first time or looking to dive deeper into the world of Game of Thrones, we've got you covered. Check out the official GoT website <a href="https://www.hbo.com/game-of-thrones">here</a>.
+            </div>
+            <br>
+            <br>
+            <br>
+             
+            <div id="heading2Events">Stay Connected</div>
+             
+            <div id=socialIcons>
+            <a href="https://www.instagram.com"><img src="socialmedia/instagram.png" title="Instagram" width="60" height="60"/></a>
+            <a href="https://www.facebook.com/"><img src="socialmedia/facebook.png" title="Facebook" width="60" height="60" /></a>
+            <a href="https://twitter.com/?lang=en-gb"><img src="socialmedia/twitter.png" title="Twitter" width="60" height="60"/></a>
+            </div>
+             
+        </div>
+    </body>
+</html>

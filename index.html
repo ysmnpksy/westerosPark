@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Group 8 Website</title>
+        <meta name="author" content="Group 8"><meta name="description" content="Web Dev Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Delius+Unicase" />
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+                <li class="left">
+                    <div id=header>
+                        <img src="logos/tar-logo.png">
+                    </div>
+                </li>
+                <li class="left"><div class="logohome"><div class="homeColor">Westeros</div></div></li>
+                    
+                <li class="rightNav"><div class="marginRight"><a href=accessibility.html>Accessibility</a></div></li>
+                
+                <li class="rightNav"><a href=shopping.html>Shopping</a></li>
+                
+                <li class="rightNav"><a href=thingstodo.html>Things to do</a></li>
+                
+                <li class="rightNav"><a href=events.html>Events</a></li>
+                
+                <li class="rightNav"><a class="activehome" href=index.html>Home</a></li>
+            </ul>
+        </nav>
+        
+            <div id="smallNav">
+                <ul>
+                    <li class="left">
+                        <div id=header>
+                            <img src="logos/tar-logo.png">
+                        </div>
+                    </li>
+                    
+                    <li class="left">
+                        <div class="logohome">
+                            <div class="homeColor">Westeros</div>
+                        </div>
+                    </li>
+                    
+                    <select class="select-css" onchange="location = this.value;">
+                        <option value="" selected="selected">Select</option>
+                        <option value="index.html">Home</option>
+                        <option value="events.html">Events</option>
+                        <option value="thingstodo.html">Things To Do</option>
+                        <option value="shopping.html">Shopping</option>
+                        <option value="accessibility.html">Accessibility</option>
+                    </select>
+                </ul>
+            </div>
+    
+        
+        <div class=slideShow>
+            <div class="numbertext">1/4</div>
+            <img class="slideshow-container" src="homeImages/colossus%20Cropped.jpg" >
+        </div>
+
+        <div class="slideShow">
+            <div class="numbertext">2/4</div>
+            <img src="homeImages/stealth%20Cropped.jpg" class="slideshow-container">
+            <div class="captionSlide2">Reach new heights with THE WALL, the UK's fastest roller coaster launching riders to 205ft at 80mph in just 2.5 seconds.</div>
+        </div>
+
+        <div class="slideShow">
+            <div class="numbertext">3/4</div>
+            <img src="homeImages/the-swarm%20Cropped.jpg" class="slideshow-container">
+            <div class="captionSlide3">Take flight on DROGON, the UK's only winged coaster.</div>
+        </div>
+
+        <div class="slideShow">
+            <div class="numbertext">4/4</div>
+            <img src="homeImages/saw-the-ride%20Cropped.jpg" class="slideshow-container">
+            <div class="captionSlide4">Face one of Khaleesi's most twisted traps with Unsullied The Ride, the world's first horror themed roller coaster featuring a 100ft "beyond-vertical" drop.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        
+        <div style="text-align:center; padding-top: 15px;">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n)
+            {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n)
+            {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("slideShow");
+              var dots = document.getElementsByClassName("dot");
+                
+              if(n > slides.length){
+                  slideIndex = 1
+              }    
+                
+              if(n < 1){
+                  slideIndex = slides.length
+              }
+                
+              for(i = 0; i < slides.length; i++){
+                  slides[i].style.display = "none";  
+              }
+                
+              for (i = 0; i < dots.length; i++)
+              {
+                  dots[i].className = dots[i].className.replace("active", "");
+              }
+                
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+                
+        </script>
+            
+        <div id="centerAlign"><br>Immerse yourself in the world of Game of Thrones stories and soak up the Game of Thrones magic at our Theme Park. Over 50 attractions, breathtaking parades and shows offer you and your fellow friends a magical experiences and exciting adventures. <br>Home to over 30 thrilling rides, attractions &  events, WESTEROS is the ultimate destination for thrill seekers and Game of Thrones lovers, featuring some of the UK's most popular roller coasters.</div>
+
+        <div class="wrap">
+            <div class="left">
+                <div id="pageIcon">
+                    Check out our unmissable events
+                    <a href="events.html"><img class="homeIcons" src="homeImages/events.png"></a>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div id="pageIcon">
+                    Check out our thrilling rides and attractions
+                    <a href="thingstodo.html"><img class="homeIcons" src="homeImages/roller-coaster2.png"></a>
+                </div>
+            </div>
+            
+            <div class="center">
+                <div id="pageIcon">
+                    Check out all our amazing shops
+                    <a href="shopping.html"><img class="homeIcons" src="homeImages/shopping-bag2.png"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="centerAlign">
+            <br>
+            For assistance with your Westeros trip call freephone on 0800 169 0737<br>
+            <div class="subText">Monday to Friday 9:00 AM to 8:00 PM, Saturday 9:00 AM to 7:00 PM and Sunday 10:00 AM to 4:00 PM
+            </div>
+        </div>
+        
+        <hr class="linebreak"/>
+        
+        <div class="wrapLR">
+            <div class="leftMap">
+                <div id="homeLR">
+                    <div id="heading1Home">How long until we're open?</div>
+                    <div class="countdownText">
+                        <div id="countdown"></div>
+                    </div>
+            
+                    <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Output the result in an element with id="demo"
+                        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                        // If the count down is over, write some text 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                    </script>
+                    <p>Westeros is currently closed until March 2020 as winter has finally come. Due to the cold winter temperatures, we have to close down the park so we can focus on maintaining our rides. Once the summer months are near, our doors will be open again. </p>
+                </div>
+            </div>
+            
+            <div class="rightMap">
+                <div id="homeLR">
+                    <div id=heading1Home>Where to find us:</div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8277.609120228664!2d-114.00129427578085!3d52.95983442653525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53756397318ad9ad%3A0x6eebd56fce2e75a8!2sWesterose%2C%20AB%20T0C%202V0%2C%20Canada!5e0!3m2!1sen!2suk!4v1573672091116!5m2!1sen!2suk"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div id=footerHome>
+            <div id=pSmall style="width: 40%";>Whether you're starting for the first time or looking to dive deeper into the world of Game of Thrones, we've got you covered. Check out the official GoT website <a href="https://www.hbo.com/game-of-thrones">here</a>.
+            </div>
+            <br>
+            <br>                
+            <br>
+                    
+            <div id=heading2Home>Stay Connected</div>
+            
+            <div id=socialIcons>
+            <a href="https://www.instagram.com"><img src="socialmedia/instagram.png" title="Instagram" width="60" height="60"/></a>
+            <a href="https://www.facebook.com/"><img src="socialmedia/facebook.png" title="Facebook" width="60" height="60" /></a>
+            <a href="https://twitter.com/?lang=en-gb"><img src="socialmedia/twitter.png" title="Twitter" width="60" height="60"/></a>
+            </div>
+                    
+            </div>
+            <div class="right">
+                
+            </div>
+
+    </body>
+</html>
